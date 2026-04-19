@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio — DevDuo</title>
+  <meta name="description" content="Proyectos y páginas web desarrolladas por DevDuo." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar scrolled" role="navigation" aria-label="Navegación principal">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo">Dev<span>Duo</span></a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="#proyectos" class="active">Proyectos</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+
+      <a href="index.html#contacto" class="btn btn-outline nav-cta">Contrátanos</a>
+
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════
+       HERO DEL PORTAFOLIO
+  ═══════════════════════════════════════════ -->
+  <header class="portfolio-hero">
+    <div class="container">
+
+      <div style="opacity:0; animation: fadeUp 0.7s 0.1s forwards;">
+        <span class="tag">// Nuestro trabajo</span>
+      </div>
+
+      <h1 class="section-title reveal" style="font-size: clamp(2.5rem, 7vw, 5rem); opacity:0; animation: fadeUp 0.7s 0.3s forwards;">
+        Lo que hemos<br>
+        <span style="color: var(--accent);">construido.</span>
+      </h1>
+
+      <p class="section-sub" style="opacity:0; animation: fadeUp 0.7s 0.5s forwards; margin-bottom: 0;">
+        Una selección de proyectos reales. Haz clic en cualquier tarjeta para
+        visitar el sitio o ver el repositorio.
+      </p>
+
+      <!-- Filtros -->
+      <div class="filter-bar" style="opacity:0; animation: fadeUp 0.7s 0.7s forwards;">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+        <button class="filter-btn" data-filter="webapp">Web App</button>
+        <button class="filter-btn" data-filter="landing">Landing</button>
+        <button class="filter-btn" data-filter="api">API / Backend</button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════
+       GRILLA DE PROYECTOS
+  ═══════════════════════════════════════════ -->
+  <main id="proyectos">
+    <div class="container">
+      <div class="portfolio-grid">
+
+        <!-- Proyecto 1 -->
+        <article class="portfolio-card reveal" data-category="ecommerce">
+          <div class="portfolio-thumb">🛒</div>
+          <div class="portfolio-body">
+            <div class="portfolio-category">E-commerce</div>
+            <div class="portfolio-name">Tienda Moda Lima</div>
+            <p class="portfolio-desc">
+              Tienda online con catálogo dinámico, carrito persistente,
+              checkout con Izipay y panel de administración personalizado.
+            </p>
+            <div class="product-tech" style="margin-bottom: 20px;">
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">Stripe</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
+                Ver sitio →
+              </a>
+              <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="portfolio-card reveal" data-category="webapp">
+          <div class="portfolio-thumb">📊</div>
+          <div class="portfolio-body">
+            <div class="portfolio-category">Web App</div>
+            <div class="portfolio-name">Dashboard Ventas SaaS</div>
+            <p class="portfolio-desc">
+              Panel de métricas en tiempo real para empresa de retail.
+              Incluye reportes PDF, alertas por email y roles de usuario.
+            </p>
+            <div class="product-tech" style="margin-bottom: 20px;">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">PostgreSQL</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
+                Ver demo →
+              </a>
+              <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="portfolio-card reveal" data-category="landing">
+          <div class="portfolio-thumb">🚀</div>
+          <div class="portfolio-body">
+            <div class="portfolio-category">Landing Page</div>
+            <div class="portfolio-name">Startup Fintech</div>
+            <p class="portfolio-desc">
+              Landing de alto impacto para startup fintech peruana.
+              Score 98 en PageSpeed, 0–1s LCP, integración con Mailchimp.
+            </p>
+            <div class="product-tech" style="margin-bottom: 20px;">
+              <span class="tech-badge">Astro</span>
+              <span class="tech-badge">Tailwind</span>
+              <span class="tech-badge">Vercel</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
+                Ver sitio →
+              </a>
+              <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 4 -->
+        <article class="portfolio-card reveal" data-category="api">
+          <div class="portfolio-thumb">🔌</div>
+          <div class="portfolio-body">
+            <div class="portfolio-category">API / Backend</div>
+            <div class="portfolio-name">API Reservas Hoteles</div>
+            <p class="portfolio-desc">
+              REST API para cadena hotelera con gestión de disponibilidad,
+              webhooks de pago y documentación Swagger completa.
+            </p>
+            <div class="product-tech" style="margin-bottom: 20px;">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express</span>
+              <span class="tech-badge">Redis</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
+                Ver docs →
+              </a>
+              <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 5 -->
+        <article class="portfolio-card reveal" data-category="webapp">
+          <div class="portfolio-thumb">🤖</div>
+          <div class="portfolio-body">
+            <div class="portfolio-category">Web App</div>
+            <div class="portfolio-name">Asistente IA Inmobiliaria</div>
+            <p class="portfolio-desc">
+              App web que usa GPT-4 para responder preguntas sobre propiedades,
+              analizar documentos PDF y generar contratos automáticamente.
+            </p>
+            <div class="product-tech" style="margin-bottom: 20px;">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">OpenAI</span>
+              <span class="tech-badge">Python</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
+                Ver demo →
+              </a>
+              <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 6 -->
+        <article class="portfolio-card reveal" data-category="landing">
+          <div class="portfolio-thumb">🎓</div>
+          <div class="portfolio-body">
+            <div class="portfolio-category">Landing Page</div>
+            <div class="portfolio-name">Academia Online</div>
+            <p class="portfolio-desc">
+              Sitio de cursos online con reproductor de video, progreso del
+              estudiante y área de pagos con planes mensuales/anuales.
+            </p>
+            <div class="product-tech" style="margin-bottom: 20px;">
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">Supabase</span>
+              <span class="tech-badge">Stripe</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
+                Ver sitio →
+              </a>
+              <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.portfolio-grid -->
+    </div>
+  </main>
+
+
+  <!-- ══════════════════════════════════════════
+       CTA FINAL
+  ═══════════════════════════════════════════ -->
+  <section style="padding: 80px 0; border-top: 1px solid var(--border); text-align: center;">
+    <div class="container reveal">
+      <span class="tag">// ¿Tienes una idea?</span>
+      <h2 class="section-title" style="margin-bottom: 16px;">
+        Tu proyecto podría<br>estar aquí.
+      </h2>
+      <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 32px;">
+        Cuéntanos qué quieres construir. Respondemos en 24 horas.
+      </p>
+      <a href="index.html#contacto" class="btn btn-primary" style="font-size: 14px; padding: 15px 36px;">
+        Hablemos del proyecto →
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-text">
+        © 2025 <strong>DevDuo</strong>. Hecho con ☕ en Lima.
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="portfolio.html">Portafolio</a>
+        <a href="index.html#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
