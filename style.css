@@ -518,73 +518,45 @@ img { max-width: 100%; display: block; }
 }
 
 /* ── Redes Sociales ─────────────────────────── */
-.redes-tabla {
-  background: var(--surface);
-  border: 1px solid var(--border);
+.iconos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.icono-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 8px;
   border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.tabla-header {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  padding: 16px 24px;
+  border: 1px solid var(--border);
   background: var(--surface2);
-  border-bottom: 1px solid var(--border);
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--white);
+  text-decoration: none;
+  transition: all var(--transition);
 }
 
-.tabla-col-dev {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--white);
-  font-size: 13px;
-}
-
-.tabla-row {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  padding: 14px 24px;
-  border-bottom: 1px solid var(--border);
-  align-items: center;
-  transition: background var(--transition);
-}
-
-.tabla-row:last-child { border-bottom: none; }
-
-.tabla-row:hover { background: var(--surface2); }
-
-.tabla-col-red {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  color: var(--text);
-}
-
-.tabla-col-red img {
-  width: 18px;
-  height: 18px;
+.icono-item img {
+  width: 32px;
+  height: 32px;
   object-fit: contain;
 }
 
-.tabla-btn {
-  font-size: 12px;
-  padding: 6px 14px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: var(--bg);
+.icono-item span {
+  font-size: 11px;
   color: var(--text-dim);
-  transition: all var(--transition);
-  text-decoration: none;
-  display: inline-block;
+  letter-spacing: 0.05em;
 }
 
-.tabla-btn:hover {
+.icono-item:hover {
   border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,229,255,0.08);
+}
+
+.icono-item:hover span {
   color: var(--accent);
 }
 
