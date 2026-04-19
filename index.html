@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevDuo — Desarrollo Web</title>
+  <meta name="description" content="Somos dos desarrolladores web apasionados por crear experiencias digitales únicas." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo">Dev<span>Duo</span></a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#inicio"    class="active">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <a href="portfolio.html" class="btn btn-outline nav-cta">Ver portafolio</a>
+
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════
+       HERO — INICIO
+  ═══════════════════════════════════════════ -->
+  <section id="inicio" class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow"  aria-hidden="true"></div>
+
+    <div class="container hero-content">
+
+      <div class="hero-eyebrow">
+        <div class="hero-dot"></div>
+        <span>Disponibles para proyectos · Lima, Perú</span>
+      </div>
+
+      <h1 class="hero-title">
+        Código que<br>
+        <span class="accent">construye</span><br>
+        <span class="dim">negocios.</span>
+      </h1>
+
+      <p class="hero-desc">
+        Somos dos desarrolladores web especializados en crear productos digitales
+        rápidos, modernos y con propósito. Desde el diseño hasta el despliegue.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#productos" class="btn btn-primary">Ver nuestros productos</a>
+        <a href="#contacto"  class="btn btn-ghost">Contáctanos</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">12<span>+</span></div>
+          <div class="stat-label">Proyectos entregados</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2<span>+</span></div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Código limpio</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       NOSOTROS
+  ═══════════════════════════════════════════ -->
+  <section id="nosotros" class="about">
+    <div class="container">
+
+      <div class="reveal">
+        <span class="tag">// Quiénes somos</span>
+        <h2 class="section-title">Dos devs,<br>una visión.</h2>
+        <p class="section-sub">
+          Combinamos nuestras habilidades para entregar soluciones web completas —
+          desde el frontend hasta el backend, pasando por UX y despliegue en la nube.
+        </p>
+      </div>
+
+      <div class="about-grid reveal">
+
+        <!-- Dev 1 -->
+        <div class="about-card">
+          <div class="card-avatar">A</div>
+          <div class="card-name">Nombre Dev 1</div>
+          <div class="card-role">Frontend & UI Engineer</div>
+          <p class="card-bio">
+            Apasionado por las interfaces que enamoran. Me especializo en construir
+            experiencias de usuario fluidas, accesibles y visualmente potentes. Si
+            puede verse, puedo hacerlo memorable.
+          </p>
+          <div class="skills-list">
+            <span class="skill-chip">React</span>
+            <span class="skill-chip">Next.js</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">Tailwind</span>
+            <span class="skill-chip">Figma</span>
+          </div>
+        </div>
+
+        <!-- Dev 2 -->
+        <div class="about-card">
+          <div class="card-avatar" style="background: linear-gradient(135deg, #7b61ff, #ff4d6d);">B</div>
+          <div class="card-name">Nombre Dev 2</div>
+          <div class="card-role">Backend & DevOps Engineer</div>
+          <p class="card-bio">
+            Me muevo en el lado invisible del web: APIs robustas, bases de datos
+            optimizadas y despliegues sin drama. Si la app tiene que escalar,
+            estoy en mi elemento.
+          </p>
+          <div class="skills-list">
+            <span class="skill-chip">Node.js</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">PostgreSQL</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">AWS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       PRODUCTOS / SERVICIOS
+  ═══════════════════════════════════════════ -->
+  <section id="productos" class="products">
+    <div class="container">
+
+      <div class="products-header reveal">
+        <div>
+          <span class="tag">// Lo que hacemos</span>
+          <h2 class="section-title">Nuestros<br>productos.</h2>
+          <p class="section-sub">
+            Soluciones reales para problemas reales. Cada producto es construido
+            con atención al detalle y pensando en quien lo usa.
+          </p>
+        </div>
+        <a href="portfolio.html" class="btn btn-primary">
+          Ver todos los proyectos →
+        </a>
+      </div>
+
+      <div class="products-grid">
+
+        <div class="product-card reveal">
+          <div class="product-icon">🛒</div>
+          <div class="product-name">E-commerce Pro</div>
+          <p class="product-desc">
+            Tiendas online completas con carrito, pasarela de pagos, panel admin
+            y sistema de inventario en tiempo real.
+          </p>
+          <div class="product-tech">
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">Stripe</span>
+            <span class="tech-badge">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-icon">📊</div>
+          <div class="product-name">Dashboard Analytics</div>
+          <p class="product-desc">
+            Paneles de control con visualización de datos en tiempo real, reportes
+            exportables y KPIs personalizados.
+          </p>
+          <div class="product-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">D3.js</span>
+            <span class="tech-badge">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-icon">📱</div>
+          <div class="product-name">Landing Pages</div>
+          <p class="product-desc">
+            Páginas de aterrizaje de alta conversión, optimizadas para SEO y
+            velocidad de carga en cualquier dispositivo.
+          </p>
+          <div class="product-tech">
+            <span class="tech-badge">HTML/CSS</span>
+            <span class="tech-badge">Astro</span>
+            <span class="tech-badge">Vercel</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-icon">🔌</div>
+          <div class="product-name">APIs REST</div>
+          <p class="product-desc">
+            Backends escalables con autenticación, documentación automática y
+            tests end-to-end incluidos.
+          </p>
+          <div class="product-tech">
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-icon">🤖</div>
+          <div class="product-name">Apps con IA</div>
+          <p class="product-desc">
+            Integramos modelos de lenguaje y visión en tus flujos de trabajo para
+            automatizar tareas y potenciar tu producto.
+          </p>
+          <div class="product-tech">
+            <span class="tech-badge">OpenAI</span>
+            <span class="tech-badge">LangChain</span>
+            <span class="tech-badge">Python</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-icon">☁️</div>
+          <div class="product-name">Hosting & DevOps</div>
+          <p class="product-desc">
+            Configuramos CI/CD, servidores en la nube y monitoreo para que tu
+            app esté siempre arriba y actualizada.
+          </p>
+          <div class="product-tech">
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">GitHub Actions</span>
+            <span class="tech-badge">Nginx</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       CONTACTO + FORMULARIO
+  ═══════════════════════════════════════════ -->
+  <section id="contacto" class="contact">
+    <div class="container">
+
+      <div class="reveal">
+        <span class="tag">// Hablemos</span>
+        <h2 class="section-title">Contáctanos.</h2>
+        <p class="section-sub">
+          ¿Tienes un proyecto en mente? Cuéntanos. Respondemos en menos de 24 horas.
+        </p>
+      </div>
+
+      <div class="contact-grid reveal">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <h3>¿Listo para construir algo?</h3>
+          <p>
+            Ya sea una idea desde cero o mejorar lo que ya tienes,
+            estamos disponibles para proyectos freelance y contratos.
+          </p>
+
+          <div class="contact-item">
+            <span class="icon">📧</span>
+            <span>hola@devduo.dev</span>
+          </div>
+          <div class="contact-item">
+            <span class="icon">💬</span>
+            <span>WhatsApp: +51 900 000 000</span>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📍</span>
+            <span>Lima, Perú · Trabajo remoto</span>
+          </div>
+          <div class="contact-item">
+            <span class="icon">🕐</span>
+            <span>Lun – Vie, 9am – 7pm</span>
+          </div>
+
+          <div style="margin-top: 32px; display: flex; gap: 12px;">
+            <a href="#" class="btn btn-ghost">GitHub</a>
+            <a href="#" class="btn btn-ghost">LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form-card">
+          <form id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servicio">¿Qué necesitas?</label>
+              <select id="servicio" name="servicio">
+                <option value="">Selecciona un servicio</option>
+                <option value="ecommerce">E-commerce</option>
+                <option value="dashboard">Dashboard / App Web</option>
+                <option value="landing">Landing Page</option>
+                <option value="api">API / Backend</option>
+                <option value="ia">Integración con IA</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="presupuesto">Presupuesto aproximado</label>
+              <select id="presupuesto" name="presupuesto">
+                <option value="">Selecciona un rango</option>
+                <option value="500">S/ 500 – S/ 1,500</option>
+                <option value="1500">S/ 1,500 – S/ 4,000</option>
+                <option value="4000">S/ 4,000 – S/ 10,000</option>
+                <option value="10000">S/ 10,000+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Cuéntanos tu proyecto</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Describe brevemente qué quieres construir, en qué etapa estás y cualquier detalle que nos ayude a entender tu visión..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              Enviar mensaje →
+            </button>
+
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div style="font-size: 36px; margin-bottom: 16px;">✅</div>
+            <div style="font-family: var(--font-head); font-size: 1.3rem; color: var(--white); margin-bottom: 8px;">¡Mensaje recibido!</div>
+            <div style="font-size: 13px; color: var(--text-dim);">Te respondemos en menos de 24 horas. ¡Gracias!</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-text">
+        © 2025 <strong>DevDuo</strong>. Hecho con ☕ en Lima.
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="portfolio.html">Portafolio</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
