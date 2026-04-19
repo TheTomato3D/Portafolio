@@ -518,43 +518,74 @@ img { max-width: 100%; display: block; }
 }
 
 /* ── Redes Sociales ─────────────────────────── */
-.redes-header {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 20px;
-}
-
-.redes-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.red-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 12px;
-  padding: 7px 14px;
-  border-radius: 20px;
+.redes-tabla {
+  background: var(--surface);
   border: 1px solid var(--border);
-  background: var(--surface2);
-  color: var(--text);
-  transition: all var(--transition);
-  text-decoration: none;
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
-.red-badge img {
-  width: 16px;
-  height: 16px;
+.tabla-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  padding: 16px 24px;
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.tabla-col-dev {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  font-size: 13px;
+}
+
+.tabla-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  padding: 14px 24px;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  transition: background var(--transition);
+}
+
+.tabla-row:last-child { border-bottom: none; }
+
+.tabla-row:hover { background: var(--surface2); }
+
+.tabla-col-red {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.tabla-col-red img {
+  width: 18px;
+  height: 18px;
   object-fit: contain;
 }
 
-.red-badge:hover {
+.tabla-btn {
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-dim);
+  transition: all var(--transition);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tabla-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
-  transform: translateY(-2px);
 }
 
 /* ── Contact ────────────────────────────────── */
