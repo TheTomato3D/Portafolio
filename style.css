@@ -589,6 +589,7 @@ img { max-width: 100%; display: block; }
 /* ── Contact ────────────────────────────────── */
 .contact {
   padding: 100px 0;
+  background: var(--surface);
 }
 
 .contact-grid {
