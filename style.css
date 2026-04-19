@@ -518,78 +518,43 @@ img { max-width: 100%; display: block; }
 }
 
 /* ── Redes Sociales ─────────────────────────── */
-.redes {
-  padding: 100px 0;
-  background: var(--bg);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.redes-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-}
-
-.redes-card {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 32px;
-  transition: border-color var(--transition);
-}
-
-.redes-card:hover {
-  border-color: var(--accent);
-}
-
-.redes-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 24px;
-}
-
-.red-item {
+.redes-header {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
-  border-radius: var(--radius);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.redes-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.red-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  padding: 7px 14px;
+  border-radius: 20px;
   border: 1px solid var(--border);
   background: var(--surface2);
   color: var(--text);
-  font-size: 13px;
   transition: all var(--transition);
   text-decoration: none;
 }
 
-.red-item:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  transform: translateX(4px);
-}
-
-.red-icon { font-size: 16px; }
-
-.red-icon img {
-  width: 20px;
-  height: 20px;
+.red-badge img {
+  width: 16px;
+  height: 16px;
   object-fit: contain;
 }
 
-.red-label { flex: 1; letter-spacing: 0.05em; }
-
-.red-arrow {
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity var(--transition);
-}
-
-.red-item:hover .red-arrow { opacity: 1; }
-
-@media (max-width: 768px) {
-  .redes-grid { grid-template-columns: 1fr; }
+.red-badge:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
 }
 
 /* ── Contact ────────────────────────────────── */
