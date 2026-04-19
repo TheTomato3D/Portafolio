@@ -520,7 +520,7 @@ img { max-width: 100%; display: block; }
 /* ── Redes Sociales ─────────────────────────── */
 .redes {
   padding: 100px 0;
-  background: var(--surface);
+  background: var(--bg);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
