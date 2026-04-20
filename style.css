@@ -789,7 +789,7 @@ img { max-width: 100%; display: block; }
 
 .products-grid .portfolio-thumb {
   height: 180px;
-  background: var(--surface2);
+  background: #c9d8e8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -800,7 +800,7 @@ img { max-width: 100%; display: block; }
 
 .portfolio-grid .portfolio-thumb {
   height: 180px;
-  background: #c9d8e8;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
