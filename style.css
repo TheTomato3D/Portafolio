@@ -789,7 +789,7 @@ img { max-width: 100%; display: block; }
 
 .portfolio-thumb {
   height: 180px;
-  background: #c9d8e894;
+  background: var(--surface2);
   display: flex;
   align-items: center;
   justify-content: center;
