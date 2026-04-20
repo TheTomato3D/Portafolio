@@ -789,7 +789,7 @@ img { max-width: 100%; display: block; }
 
 .portfolio-thumb {
   height: 180px;
-  background: #c9d8e8;
+  background: var(--surface2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -803,17 +803,6 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(0,229,255,0.05), rgba(123,97,255,0.05));
-}
-
-.portfolio-grid .portfolio-thumb img {
-
-  object-fit: cover;
-}
-
-.products-grid .portfolio-thumb img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
 }
 
 .portfolio-body {
