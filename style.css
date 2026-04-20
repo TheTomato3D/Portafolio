@@ -804,6 +804,12 @@ img { max-width: 100%; display: block; }
   inset: 0;
 }
 
+.portfolio-thumb img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
 .portfolio-body {
   padding: 24px;
 }
