@@ -805,6 +805,12 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(135deg, rgba(0,229,255,0.05), rgba(123,97,255,0.05));
 }
 
+.portfolio-thumb img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
 .portfolio-body {
   padding: 24px;
 }
